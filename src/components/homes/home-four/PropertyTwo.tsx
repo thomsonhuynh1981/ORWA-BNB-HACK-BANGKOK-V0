@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import feature_listing_data from "../../../data/home-data/FeaturedListingData"
+//import feature_listing_data from "../../../data/home-data/FeaturedListingData"
 
 const PropertyTwo = () => {
    return (
