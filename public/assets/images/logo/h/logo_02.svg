@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<svg width="130" height="50" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <g class="layer">
+  <title>Layer 1</title>
+  <circle cx="25" cy="25" fill="#37b6ff" id="svg_1" r="25"/>
+  <text fill="#37b6ff" font-family="Sans-serif" font-size="24" id="svg_8" stroke-width="0" text-anchor="middle" transform="matrix(1 0 0 1 0 0)" x="67.11" xml:space="preserve" y="33.89">R</text>
+  <text fill="#37b6ff" font-family="Sans-serif" font-size="24" id="svg_9" stroke-width="0" text-anchor="middle" transform="matrix(1 0 0 1 0 0)" x="91.11" xml:space="preserve" y="33.89">W</text>
+  <text fill="#37b6ff" font-family="Sans-serif" font-size="24" id="svg_10" stroke-width="0" text-anchor="middle" x="112.11" xml:space="preserve" y="33.89">A</text>
+  <text fill="#ffffff" font-family="Sans-serif" font-size="24" id="svg_11" stroke-width="0" text-anchor="middle" x="25" xml:space="preserve" y="33.29">O</text>
+ </g>
+</svg>
