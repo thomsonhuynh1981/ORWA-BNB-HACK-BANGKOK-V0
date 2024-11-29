@@ -21,6 +21,7 @@ const NiceSelect: FC<NiceSelectProps> = ({
   placeholder,
   className,
   onChange,
+  name,
 }) => {
   const [open, setOpen] = useState(false);
   const [current, setCurrent] = useState<Option>(options[defaultCurrent]);
@@ -33,7 +34,7 @@ const NiceSelect: FC<NiceSelectProps> = ({
 
   const currentHandler = (item: Option) => {
     setCurrent(item);
-    onChange({ target: { value: item.value } } as ChangeEvent<HTMLSelectElement>);
+    onChange({ target: { value: item.value, name: name } } as ChangeEvent<HTMLSelectElement>);
     onClose();
   };
 

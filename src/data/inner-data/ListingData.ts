@@ -1,13 +1,14 @@
+interface CarouselThumb {
+   id?: string;
+   img: string;
+   active?: string;
+}
 interface DataType {
    id: number;
    page: string;
    tag: string;
    tag_bg?: string;
-   carousel_thumb: {
-      id?: string;
-      img: string;
-      active?: string;
-   }[];
+   carousel_thumb: CarouselThumb[];
    thumb?: string;
    bg_img?: string;
    title: string;
@@ -27,7 +28,34 @@ interface DataType {
    type: string;
    status: string;
    amenities?: string[];
-}[];
+};
+
+const listing_data_info: DataType = {
+   id: 0,
+   page: 'listing_7',
+   tag: '',
+   tag_bg: 'sale',
+   carousel_thumb: [],
+   thumb: '',
+   bg_img: '',
+   title: '',
+   address: '',
+   location: '',
+   property_info: {
+      sqft: 0,
+      bed: '',
+      bath: '',
+      kitchen: '',
+      parking_lot: '',
+      garden: '',
+   },
+   price: 0,
+   price_text: '',
+   carousel: '4',
+   type: '',
+   status: 'Sell Houses',
+   amenities: [],
+};
 
 const listing_data: DataType[] = [
    {
@@ -1624,4 +1652,4 @@ const listing_data: DataType[] = [
    },
 ]
 
-export default listing_data;
+export {listing_data, listing_data_info};
