@@ -1,8 +1,44 @@
+import { useState } from "react";
 import NumberNiceSelect from "../../../ui/NumberNiceSelect";
+
+import { useDispatch } from 'react-redux';
+import { setPropertyInfo } from "../../../redux/features/propertySlice";
+import useDidMountEffect from "../../../hooks/useDidMountEffect";
+
+interface PropertyData {
+   sqft: string;
+   bed: string;
+   bath: string;
+   kitchen?: string;
+   parking_lot?: string;
+   garden?: string;
+}
 
 const ListingDetails = () => {
 
-   const selectHandler = () => { };
+   const dispatch = useDispatch();
+
+   const [propertyData, setPropertyData] = useState<PropertyData>({
+      sqft: '',
+      bed: '',
+      bath: '',
+      kitchen: '',
+      parking_lot: '',
+      garden: '',
+   });
+
+   useDidMountEffect(() => {
+      dispatch(setPropertyInfo(propertyData));
+   }, [propertyData, dispatch]);
+
+   const selectHandler = (event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+      const { name, value } = event.target;
+      setPropertyData(prev => ({ ...prev, [name]: value }));
+   }
+
+   const handleChange = () => {
+
+   }
 
    return (
       <div className="bg-white card-box border-20 mt-40">
@@ -11,7 +47,7 @@ const ListingDetails = () => {
             <div className="col-md-6">
                <div className="dash-input-wrapper mb-30">
                   <label htmlFor="">Size in ft*</label>
-                  <input type="text" placeholder="Ex: 3,210 sqft" />
+                  <input type="text" placeholder="Ex: 3,210 sqft" name="sqft" onChange={selectHandler} />
                </div>
             </div>
             <div className="col-md-6">
@@ -26,7 +62,7 @@ const ListingDetails = () => {
                      ]}
                      defaultCurrent={0}
                      onChange={selectHandler}
-                     name=""
+                     name="bed"
                      placeholder="" />
                </div>
             </div>
@@ -42,7 +78,7 @@ const ListingDetails = () => {
                      ]}
                      defaultCurrent={0}
                      onChange={selectHandler}
-                     name=""
+                     name="bath"
                      placeholder="" />
                </div>
             </div>
@@ -58,7 +94,7 @@ const ListingDetails = () => {
                      ]}
                      defaultCurrent={0}
                      onChange={selectHandler}
-                     name=""
+                     name="kitchen"
                      placeholder="" />
                </div>
             </div>
@@ -74,7 +110,7 @@ const ListingDetails = () => {
                      ]}
                      defaultCurrent={0}
                      onChange={selectHandler}
-                     name=""
+                     name="parking_lot"
                      placeholder="" />
                </div>
             </div>
@@ -101,7 +137,7 @@ const ListingDetails = () => {
                         { value: 4, text: 3 },
                      ]}
                      defaultCurrent={0}
-                     onChange={selectHandler}
+                     onChange={handleChange}
                      name=""
                      placeholder="" />
                </div>
