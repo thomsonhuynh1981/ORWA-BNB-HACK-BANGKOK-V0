@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/ban-types */
 
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import properties from '../../data/inner-data/ListingData';
+import { listing_data_info } from '../../data/inner-data/ListingData';
 
 interface CarouselThumb {
    img: string;
@@ -9,7 +9,7 @@ interface CarouselThumb {
 }
 
 interface PropertyInfo {
-   sqft: string;
+   sqft: number;
    bed: string;
    bath: string;
    kitchen?: string;
@@ -43,7 +43,7 @@ interface PropertyState {
 
 const initialState: PropertyState = {
    properties: [],
-   property: properties,
+   property: listing_data_info,
 };
 
 export const propertySlice = createSlice({

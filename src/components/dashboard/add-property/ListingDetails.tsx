@@ -6,7 +6,7 @@ import { setPropertyInfo } from "../../../redux/features/propertySlice";
 import useDidMountEffect from "../../../hooks/useDidMountEffect";
 
 interface PropertyData {
-   sqft: string;
+   sqft: number;
    bed: string;
    bath: string;
    kitchen?: string;
@@ -19,7 +19,7 @@ const ListingDetails = () => {
    const dispatch = useDispatch();
 
    const [propertyData, setPropertyData] = useState<PropertyData>({
-      sqft: '',
+      sqft: 0,
       bed: '',
       bath: '',
       kitchen: '',
@@ -33,6 +33,7 @@ const ListingDetails = () => {
 
    const selectHandler = (event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
       const { name, value } = event.target;
+      
       setPropertyData(prev => ({ ...prev, [name]: value }));
    }
 

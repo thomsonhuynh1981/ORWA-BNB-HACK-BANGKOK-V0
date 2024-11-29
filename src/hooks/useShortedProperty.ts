@@ -1,6 +1,6 @@
 import { ChangeEvent, useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import listing_data from "../data/inner-data/ListingData";
+import {listing_data} from "../data/inner-data/ListingData";
 import UseProperty from "./UseProperty";
 import { selectProperties } from "../redux/features/propertySlice";
 
