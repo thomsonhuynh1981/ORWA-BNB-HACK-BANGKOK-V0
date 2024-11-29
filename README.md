@@ -1,6 +1,6 @@
 #  BNB TESTNET SMART CONTRACT
 
-Address: 0xde40d445a7027f2771cb4472aac2c92152a3be9b
+Mint NFT Address: 0xde40d445a7027f2771cb4472aac2c92152a3be9b
 
 https://testnet.bscscan.com/address/0xde40d445a7027f2771cb4472aac2c92152a3be9b#code
 
