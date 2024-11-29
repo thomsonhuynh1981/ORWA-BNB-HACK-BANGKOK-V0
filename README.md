@@ -18,3 +18,5 @@ https://testnet.bscscan.com/address/0xde40d445a7027f2771cb4472aac2c92152a3be9b#c
 ![Add-new-propperty](https://raw.githubusercontent.com/songonha/ORWA-BNB-HACK-BANGKOK/main/public/assets/images/media/kyc-profile.png)
 
 # TASK 4: STAKING RWA Token
+
+STAKING NOTES: https://docs.google.com/document/d/11wsvShrpfthZAyxJlQqXu7z7pjeH-lHh5KmL_Lsftog/edit?usp=sharing
