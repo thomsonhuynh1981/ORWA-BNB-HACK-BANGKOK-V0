@@ -4,11 +4,11 @@ Mint NFT Address: 0xde40d445a7027f2771cb4472aac2c92152a3be9b
 
 https://testnet.bscscan.com/address/0xde40d445a7027f2771cb4472aac2c92152a3be9b#code
 
-# TASK 1: Mint and Display RWA Token
+# TASK 1a: Mint and Display RWA Token
 
 ![Add-new-propperty](https://raw.githubusercontent.com/songonha/ORWA-BNB-HACK-BANGKOK/main/public/assets/images/media/mint-rwa-token.png)
 
-# TASK 1a: Buy RWA Token
+# TASK 1b: List and Buy RWA Token
 
 ![Add-new-propperty](https://raw.githubusercontent.com/songonha/ORWA-BNB-HACK-BANGKOK/main/public/assets/images/media/buy-rwa-photo.png)
 
