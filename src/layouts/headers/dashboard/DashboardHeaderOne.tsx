@@ -68,6 +68,12 @@ const DashboardHeaderOne = ({ isActive, setIsActive }: any) => {
                      </Link>
                   </li>
                   <li className="plr">
+                     <Link to="/dashboard/add-property" className={`d-flex w-100 align-items-center ${pathname === '/dashboard/add-property' ? 'active' : ''}`} onClick={() => handleNavigation('/dashboard/add-property')}>
+                        <img src={pathname === '/dashboard/add-property' ? "/assets/images/dashboard/icon/icon_7_active.svg" : "/assets/images/dashboard/icon/icon_7.svg"} alt="" />
+                        <span>Thomson Add Prop</span>
+                     </Link>
+                  </li>
+                  <li className="plr">
                      <Link to="/dashboard/favourites" className={`d-flex w-100 align-items-center ${pathname === '/dashboard/favourites' ? 'active' : ''}`} onClick={() => handleNavigation('/dashboard/favourites')}>
                         <img src={pathname === '/dashboard/favourites' ? "/assets/images/dashboard/icon/icon_8_active.svg" : "/assets/images/dashboard/icon/icon_8.svg"} alt="" />
                         <span>Favourites</span>
